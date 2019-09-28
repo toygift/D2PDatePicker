@@ -41,7 +41,11 @@ class MonthView: AnimateView {
             // hide the contentview and move it
             self.contentView.alpha = 0.0
             self.monthLabel.text = dateFormatter.string(from: newDate)
-            
+            if #available(iOS 13.0, *) {
+                self.monthLabel.textColor = .label
+            } else {
+                // Fallback on earlier versions
+            }
             super.animate(direction: direction)
             
             return newDate
@@ -53,13 +57,13 @@ class MonthView: AnimateView {
     }
     
     
-
+    
     /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+     // Only override draw() if you perform custom drawing.
+     // An empty implementation adversely affects performance during animation.
+     override func draw(_ rect: CGRect) {
+     // Drawing code
+     }
+     */
+    
 }

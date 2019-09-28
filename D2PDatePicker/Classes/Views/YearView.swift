@@ -40,7 +40,11 @@ class YearView: AnimateView {
             // hide the contentview and move it
             self.contentView.alpha = 0.0
             self.yearLabel.text = dateFormatter.string(from: newDate)
-            
+            if #available(iOS 13.0, *) {
+                self.yearLabel.textColor = .label
+            } else {
+                // Fallback on earlier versions
+            }
             super.animate(direction: direction)
             
             return newDate
