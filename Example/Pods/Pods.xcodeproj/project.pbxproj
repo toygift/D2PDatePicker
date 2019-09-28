@@ -353,6 +353,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -690,6 +691,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.1.5;
 				MODULEMAP_FILE = "Target Support Files/D2PDatePicker/D2PDatePicker.modulemap";
 				PRODUCT_NAME = D2PDatePicker;
 				SDKROOT = iphoneos;
@@ -722,6 +724,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.1.5;
 				MODULEMAP_FILE = "Target Support Files/D2PDatePicker/D2PDatePicker.modulemap";
 				PRODUCT_NAME = D2PDatePicker;
 				SDKROOT = iphoneos;

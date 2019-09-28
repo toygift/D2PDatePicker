@@ -17,7 +17,7 @@ class MonthView: AnimateView {
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM"
-        
+        dateFormatter.locale = Locale(identifier: "ko_KR")
         var newDate:Date
         
         if direction == .backward {

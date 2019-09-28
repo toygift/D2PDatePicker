@@ -17,6 +17,7 @@ class DayView: AnimateView {
     func anim(direction: AnimationDirection, date: Date) -> Date {
         
         let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ko_KR")
         var newDate:Date
         
         if direction == .backward {
