@@ -42,7 +42,7 @@ class MonthView: AnimateView {
             self.contentView.alpha = 0.0
             self.monthLabel.text = dateFormatter.string(from: newDate)
             if #available(iOS 13.0, *) {
-                self.monthLabel.textColor = .label
+                self.monthLabel.textColor = .black
             } else {
                 // Fallback on earlier versions
             }
