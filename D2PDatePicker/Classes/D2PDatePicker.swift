@@ -120,7 +120,7 @@ public class D2PDatePicker: UIView {
     
     private func setLabel(toDate date: Date) {
         let formatter = DateFormatter()
-        
+        formatter.locale = Locale(identifier: "ko_KR")
         formatter.dateFormat = "MMM"
         self.monthView.monthLabel.text = formatter.string(from: date)
         
